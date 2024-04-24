@@ -1,0 +1,173 @@
+@keyframes rotation {
+    from {
+    transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .rotation {
+    animation: rotation 20s linear infinite;
+  }
+
+.page {
+    margin: 0 auto;
+    background-color: #202020;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.about-me__animation {
+    display: block;
+    justify-content: center;
+    position: absolute;
+    height: 400px;
+    width: 400px;
+    background-color: rgb(111, 97, 18);
+    z-index: -1;
+}
+
+.header__image {
+    background-image: url('../images/1642148715_6-abrakadabra-fun-p-lebedev-oboi-10.jpg');
+    height: 100px;
+    background-size: cover;
+    background-position: center;
+}
+
+.about-me {
+    display: flex;
+    justify-content: center;
+    margin: 100px auto;
+    padding: 0 30px;
+}
+
+.about-me__content {
+    display: flex;
+    column-gap: 30px;
+}
+
+.about-me__title {
+    margin: 0;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 60px;
+}
+
+.about-me__subtitle {
+    margin: 0;
+    margin-top: 18px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.about-me__description {
+    margin: 0;
+    margin-top: 26px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 22px;
+    max-width: 600px;
+}
+
+.about-me__git_title {
+    margin: 0;
+    margin-top: 26px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 22px;
+    max-width: 600px;
+}
+
+.about-me__github {
+    display: flex;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 16.94px;
+    text-decoration: none;
+    cursor: pointer;
+    color: wheat;
+}
+
+.about-me__github:hover {
+    opacity: 0.8;
+}
+
+.about-me__avatar {
+    width: 360px;
+    height: 450px;
+    border-radius: 13px;
+}
+
+.footer {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 800px) {
+    .about-me {
+        padding: 0 50px 0 50px;
+    }
+
+    .about-me__title {
+        margin: 0;
+        font-size: 40px;
+        font-weight: 400;
+        line-height: 40px;
+    }
+
+    .about-me__subtitle {
+        margin-top: 16px;
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .about-me__description {
+        margin-top: 20px;
+        font-size: 12px;
+        line-height: 18px;
+        max-width: 364px;
+    }
+
+    .about-me__git_title {
+        margin: 0;
+        margin-top: 26px;
+        font-size: 12px;
+        line-height: 18px;
+        max-width: 364px;
+    }
+
+    .about-me__avatar {
+        margin: 0 auto;
+        width: 255px;
+        height: 307px;
+        border-radius: 13px;
+    }
+
+    .about-me__content {
+        column-gap: 49px;
+    }
+
+    .about-me__github {
+        margin-top: 87px;
+    }
+}
+
+@media (max-width: 540px) {
+    .about-me__content {
+        flex-direction: column;
+    }
+
+    .about-me__info {
+        order: 1;
+    }
+
+    .about-me__title {
+        font-size: 30px;
+        line-height: 36.31px;
+        margin-top: 40px;
+    }
+}
